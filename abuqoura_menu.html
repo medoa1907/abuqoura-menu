@@ -1,78 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مطعم أبو قورة - القائمة</title>
+  <title>قائمة مطعم أبو قورة</title>
   <style>
-    body { font-family: 'Tahoma', sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
-    header { background: #1e824c; color: white; padding: 15px; text-align: center; }
-    nav { background: #145a32; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
-    section { padding: 20px; background: white; margin: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    h2 { color: #145a32; }
-    .item { margin-bottom: 10px; }
-    footer { text-align: center; padding: 20px; background: #ddd; }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf0;
+      text-align: center;
+      direction: rtl;
+    }
+    h1 {
+      color: #8B0000;
+    }
+    .menu {
+      max-width: 600px;
+      margin: auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    .item {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    .price {
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>مطعم أبو قورة</h1>
-    <p>مرحباً بكم! تصفح قائمتنا واطلب مباشرة عبر واتساب</p>
-  </header>
-  
-  <nav>
-    <a href="#breakfast">فطور</a>
-    <a href="#lunch">غداء</a>
-    <a href="#dessert">حلويات</a>
-    <a href="#drinks">مشروبات</a>
-    <a href="#contact">التواصل</a>
-  </nav>
-
-  <section id="breakfast">
-    <h2>قسم الفطور</h2>
-    <div class="item">فول بالزيت الحار - 15 جنيه</div>
-    <div class="item">بيض مسلوق - 10 جنيه</div>
-  </section>
-
-  <section id="lunch">
-    <h2>قسم الغداء</h2>
-    <div class="item">طاجن بامية باللحمة - 60 جنيه</div>
-    <div class="item">فراخ مشوية - 55 جنيه</div>
-  </section>
-
-  <section id="dessert">
-    <h2>قسم الحلويات</h2>
-    <div class="item">أرز باللبن - 12 جنيه</div>
-    <div class="item">أم علي - 20 جنيه</div>
-  </section>
-
-  <section id="drinks">
-    <h2>قسم المشروبات</h2>
-    <div class="item">شاي - 5 جنيه</div>
-    <div class="item">قهوة - 10 جنيه</div>
-  </section>
-
-  <section id="contact">
-    <h2>التواصل والطلب</h2>
-    <p>📞 رقم الهاتف: 01022648324</p>
-    <p>📍 العنوان: شارع النزهة، القاهرة</p>
-    <a class="whatsapp-button" href="https://wa.me/201022648324" target="_blank">اطلب الآن عبر واتساب</a>
-  </section>
-
-  <footer>
-    <p>© 2025 مطعم أبو قورة</p>
-  </footer>
+  <h1>قائمة طعام مطعم أبو قورة</h1>
+  <div class="menu">
+    <div class="item">
+      <strong>فول بالزيت الحار</strong> - <span class="price">10 جنيه</span>
+    </div>
+    <div class="item">
+      <strong>طعمية</strong> - <span class="price">8 جنيه</span>
+    </div>
+    <div class="item">
+      <strong>بطاطس محمرة</strong> - <span class="price">12 جنيه</span>
+    </div>
+    <div class="item">
+      <strong>بيض أومليت</strong> - <span class="price">15 جنيه</span>
+    </div>
+  </div>
 </body>
 </html>
