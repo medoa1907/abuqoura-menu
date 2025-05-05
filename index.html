@@ -2,52 +2,74 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>قائمة مطعم أبو قورة</title>
+  <title>منيو أبو قورة - السندوتشات</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fffaf0;
-      text-align: center;
-      direction: rtl;
-    }
-    h1 {
-      color: #8B0000;
-    }
-    .menu {
-      max-width: 600px;
-      margin: auto;
-      background-color: #f9f9f9;
+      background-color: #fff8f0;
+      margin: 0;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      color: #333;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #c0392b;
+      margin-bottom: 10px;
+    }
+    .section img {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
     }
     .item {
-      border-bottom: 1px solid #ccc;
-      padding: 10px 0;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    .item:last-child {
-      border-bottom: none;
+    .item h3 {
+      margin: 0 0 10px;
+      color: #2c3e50;
     }
-    .price {
-      color: #333;
+    .item p {
+      margin: 0;
+      font-size: 16px;
+      color: #7f8c8d;
     }
   </style>
 </head>
 <body>
-  <h1>قائمة طعام مطعم أبو قورة</h1>
-  <div class="menu">
-    <div class="item">
-      <strong>فول بالزيت الحار</strong> - <span class="price">10 جنيه</span>
-    </div>
-    <div class="item">
-      <strong>طعمية</strong> - <span class="price">8 جنيه</span>
-    </div>
-    <div class="item">
-      <strong>بطاطس محمرة</strong> - <span class="price">12 جنيه</span>
-    </div>
-    <div class="item">
-      <strong>بيض أومليت</strong> - <span class="price">15 جنيه</span>
+
+  <div class="section">
+    <h2>السندوتشات</h2>
+    <img src="https://example.com/sandwich.jpg" alt="سندوتشات"> <!-- استبدل هذا الرابط بصورة فعلية -->
+    <div class="menu-items">
+      <div class="item"><h3>سندوتش زنجر</h3><p>40 جنيه</p></div>
+      <div class="item"><h3>سندوتش كبدة اسكندراني</h3><p>20 جنيه</p></div>
+      <div class="item"><h3>سندوتش فراخ بانية</h3><p>45 جنيه</p></div>
+      <div class="item"><h3>سندوتش سجق اسكندراني</h3><p>25 جنيه</p></div>
+      <div class="item"><h3>سندوتش برجر</h3><p>40 جنيه</p></div>
+      <div class="item"><h3>سندوتش هوت دوج</h3><p>35 جنيه</p></div>
+      <div class="item"><h3>سندوتش بطاطس</h3><p>20 جنيه</p></div>
+      <div class="item"><h3>طبق بطاطس</h3><p>25 جنيه</p></div>
+      <div class="item"><h3>سندوتش برجر بيض</h3><p>35 جنيه</p></div>
+      <div class="item"><h3>سندوتش بانية عادي</h3><p>25 جنيه</p></div>
+      <div class="item"><h3>سندوتش كبدة سادة</h3><p>25 جنيه</p></div>
+      <div class="item"><h3>برجر بالبيض والجبنة</h3><p>35 جنيه</p></div>
     </div>
   </div>
+
 </body>
 </html>
